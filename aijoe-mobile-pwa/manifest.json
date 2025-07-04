@@ -1,0 +1,21 @@
+
+{
+  "name": "AIJOE",
+  "short_name": "AIJOE",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "icons": [
+    {
+      "src": "https://placedog.net/192/192?id=33",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://placedog.net/512/512?id=33",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

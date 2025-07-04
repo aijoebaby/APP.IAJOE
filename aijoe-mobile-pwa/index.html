@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#4a90e2"/>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+  <title>AIJOE - Voice Assistant</title>
+</head>
+<body>
+  <div class="fullscreen-bg">
+    <div class="overlay-text">
+      <h1>AIJOE</h1>
+      <p>Ask me anything — I'm always here for you</p>
+    </div>
+    <div class="chat-container">
+      <div class="chat-box" id="chat-box"></div>
+      <div class="input-area">
+        <button id="mic-btn" class="icon-btn">🎤</button>
+        <input type="text" id="user-input" placeholder="Ask me anything..." />
+        <button id="send-btn" class="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
